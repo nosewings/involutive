@@ -62,7 +62,7 @@ class (Semigroup a) => Involutive a where
 
 -- For several instances, we appeal to the following general principle: if @f@
 -- is a commutative applicative functor with @(<>) = liftA2 (<>)@, then @fmap
--- rev@ is a lawful definition for rev on @f@.
+-- rev@ is a lawful definition for @rev@ at @f a@ (for any @a@).
 --
 -- The fact that this principle does not work for non-commutative applicative
 -- functors explains some of the missing instances (e.g.: @Ap@, @IO@, @ST@).
